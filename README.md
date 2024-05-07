@@ -41,6 +41,11 @@ The concept is the following diagram:
 - If yes, then it will give the generated output as the final answer
 - If no, it will look up at web search for the answer.
 
+7. Build Graph
+
+- Create the control flow using LangGraph using nodes, and edges.
+- More on [LangGraph Documentation](https://python.langchain.com/docs/langgraph/)
+
 ## Technology Used
 
 The following modules are used in this project:
@@ -57,7 +62,15 @@ To run this demo project, create an virtual environment and install the src pack
 
 1. Clone the repository:
 
-2. create .env files with the following secret keys:
+2. Download the llama3 model locally first. [Llama3 Model](https://ollama.com/)
+
+3. Test run the llama3 on terminal. Open the terminal and run:
+
+```bash
+ollama run llama3
+```
+
+3. create .env files with the following secret keys:
 
 ```bash
 LANGCHAIN_TRACING_V2='true'
@@ -69,13 +82,13 @@ FIRECRAWL_API_KEY=<your-api-key> [OPTINAL]
 TAVILY_API_KEY=<your-api-key>
 ```
 
-3. Install Dependencies
+4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the various jupyter notebook
+5. Run the various jupyter notebook
 
 ## Challenges
 
